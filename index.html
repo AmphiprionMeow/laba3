@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/uikit.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+    <style>
+        .head{  
+            padding: 20px;
+        }
+        /* Падинги (свойство padding) — это внутренние отступы от границ элемента до его содержимого. */
+    </style>
+      <style>
+        body {
+          min-height: 2000px;
+        }
+    
+        .btn-up {
+          position: fixed;
+          background-color: #673ab7;
+          right: 20px;
+          bottom: 0px;
+          border-top-left-radius: 8px;
+          border-top-right-radius: 8px;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 60px;
+          height: 50px;
+        }
+    
+        .btn-up::before {
+          content: "";
+          width: 40px;
+          height: 40px;
+          background: transparent no-repeat center center;
+          background-size: 100% 100%;
+          background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z'/%3E%3C/svg%3E");
+        }
+    
+        .btn-up_hide {
+          display: none;
+        }
+    
+        @media (hover: hover) and (pointer: fine) {
+          .btn-up:hover {
+            background-color: #512da8;
+          }
+        }
+      </style>
+<body>
+    <div class="btn-up btn-up_hide"></div>
+	<header class="uk-section uk-section-secondary head">
+    <div class="uk-container-small">
+        <a href="#" class="uk-logo"><img src="logo.png"></a> Сайт-визитка
+        </div>
+    </header>
+    <div class="uk-section uk-section-large uk-section-secondary uk-background-cover" data-src="bac.jpg" uk-img >
+        <div class="uk-container uk-container-small">
+            <h1>Баязитов Каимль Рамилевич</h1> 
+            <h3>Сайт сделаный быстро, но с душой</h3>
+        </div>
+    </div>
+    
+    <div class="uk-section ">
+    <div class="uk-container uk-container-small">
+        <h2 class="uk-text-conter uk-heading-line uk-margin-large-bottom">
+           <span>О себе</span>
+        </h2>
+        </div>
+    </div>
+    
+    <div class="uk-flex uk-flex-center">
+        <div class="uk-card uk-card-default uk-card-body"><div class="card" style="width: 18rem;">
+            <img src="photo1.jpeg" class="card-img-top" alt="Умная картинка с паспорта">
+            <div class="card-body">
+                <h5 class="card-title">Мои достижение и обучение</h5>
+              <p class="card-text">Я изучил массу всякого, а так же массу всякого я забыл. Вот, что я вспомнил из достижений на момент написания сайта:</p>
+              <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Мне 18 лет, а это уже достижение</li>
+                  <li class="list-group-item">Я окончил 11 классов в школе</li>
+                  <li class="list-group-item">Я занял 2 место в олимпиаде Русский медвежонок</li>
+                  <li class="list-group-item">Я поступил в ЛУЧШИЙ университет в мире - в МТУСИ. Божественное место, с богоподобными преподавателями</li>
+                  <li class="list-group-item">Я отучился 6 лет в <a href="https://informatics.ru">Московской Школе Программистов</a> где изучал такие дисциплины как: Web-разработка, AppInventor, Python, Продвинутая компьютерная подготовка, Web-дизайн, Компьютерные сети, Программирование на C++, Программирование на C#, JavaScript, DevOps, Пром. программирование, ЕГЭ по информатике: углубленный уровень</li>
+                </ul>
+            </div>
+          </div>
+        </div>
+        <div class="uk-card uk-card-default uk-card-body uk-margin-left">
+            <div class="card" style="width: 18rem;">
+            <img src="photo3.jpeg" class="card-img-top" alt="Забавная картинка, не из паспорта">
+            <div class="card-body">
+                <h5 class="card-title">Как я сделал данный божественный сайт? Легко!</h5>
+              <p class="card-text">Всё просто, я открыл папку на рабочем столе с названием "архивы с web с непонятными названиями", где находится 40 архивов с рандомными сайтами разного уровня за 5 лет и выбрал первую попавшуюся (потому что я слишком ленив, чтобы писать скелет сайта). Так и начался проект - модернизация. Я сделал этот великолепный сайт за 30 минут. Было приятно поработать над этой лабараторной работой.</p>
+            </div>
+          </div>
+        </div>
+        <div class="uk-card uk-card-default uk-card-body uk-margin-left">
+            <div class="card" style="width: 18rem;">
+                <img src="photo5.jpeg" class="card-img-top" alt="Смешная картинка">
+                <div class="card-body">
+                  <h5 class="card-title">Послужной список</h5>
+                  <p class="card-text">Все мои лабараторные работы давались мне кровью и потом. Первые две я сделал за 30 минут в ночь перед сдачей, хоть в начале я и боялся слов path, FastAPI и т.д я уверено понажимал Ctrl+C и Ctrl+V и приодолел все невзгоды. </p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">Первая лаба с дискриминантом</li>
+                  <li class="list-group-item">Вторая лаба с FastApi</li>
+                  <li class="list-group-item">Третья лаба (эта) Frontend сайт</li>
+                </ul>
+                <div class="card-body">
+                  <a href="https://github.com/AmphiprionMeow/lab-1" class="uk-button uk-button-small">Первая лаба</a>
+                  <a href="https://github.com/AmphiprionMeow/lab2" class="uk-button uk-button-small">Вторая лаба</a>
+                </div>
+              </div>
+        </div>
+    </div>
+
+    <div class="uk-grid-collapse uk-child-width-expand@s uk-text-center" uk-grid>
+            <div class="uk-background-secondary uk-padding uk-light">Мои социальные сети: 
+                <br><a href="https://t.me/Ahimpor">Telegram</a></div>
+            <div class="uk-background-secondary uk-padding uk-light">© 2023, Баязитов Камиль Рамилевич</div>
+        </div>
+    </div>
+    <script>
+        const btnUp = {
+          el: document.querySelector('.btn-up'),
+          show() {
+            // удалим у кнопки класс btn-up_hide
+            this.el.classList.remove('btn-up_hide');
+          },
+          hide() {
+            // добавим к кнопке класс btn-up_hide
+            this.el.classList.add('btn-up_hide');
+          },
+          addEventListener() {
+            // при прокрутке содержимого страницы
+            window.addEventListener('scroll', () => {
+              // определяем величину прокрутки
+              const scrollY = window.scrollY || document.documentElement.scrollTop;
+              // если страница прокручена больше чем на 400px, то делаем кнопку видимой, иначе скрываем
+              scrollY > 400 ? this.show() : this.hide();
+            });
+            // при нажатии на кнопку .btn-up
+            document.querySelector('.btn-up').onclick = () => {
+              // переместим в начало страницы
+              window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: 'smooth'
+              });
+            }
+          }
+        }
+        btnUp.addEventListener();
+      </script>
+	<script src="js/uikit.min.js"></script>
+	<script src="js/uikit-icons.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
